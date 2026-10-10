@@ -8,12 +8,32 @@ struct Point3d
     float z {};
 };
 
+void printPoints(const Point3d& point3d)
+{
+    std::cout << std::format("Coordinates: ({}, {}, {})\n", point3d.x, point3d.y, point3d.z);
+}
+
+void moveXPoint(Point3d& point, float offset)
+{
+    point.x += offset;
+}
+
+Point3d translateXPoint(Point3d point, float offset)
+{
+    point.x += offset;
+    return point;
+}
+
 int main(int argc, const char * argv[]) {
-    Point3d point {0.99f, 0.45f, 0.99f};
-    std::cout << std::format("Point: ({}, {}, {})\n", point.x, point.y, point.z);
+    Point3d point {1.0f, 2.0f, 3.0f};
+    printPoints(point);
     
-    point.y = 0.99f;
-    std::cout << std::format("After y reassignment: ({}, {}, {})\n", point.x, point.y, point.z);
+    moveXPoint(point, 5.0f);
+    printPoints(point);
     
+    printPoints(point);
+    Point3d point2 = translateXPoint(point, 2.0f);
+    
+    printPoints(point2);
     return 0;
 }

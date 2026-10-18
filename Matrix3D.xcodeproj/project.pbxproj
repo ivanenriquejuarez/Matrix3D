@@ -22,9 +22,25 @@
 		2CE5C1CD3079168100918652 /* Matrix3D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Matrix3D; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2CD93E8D307B1F150053886D /* Exceptions for "Matrix3D" folder in "Matrix3D" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				exercises/01_point3d.cpp,
+				"exercises/02 _modify_3d_point.cpp",
+				exercises/03_translate_3d_point.cpp,
+				exercises/04_memory_and_pointers.cpp,
+			);
+			target = 2CE5C1CC3079168100918652 /* Matrix3D */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2CE5C1CF3079168100918652 /* Matrix3D */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2CD93E8D307B1F150053886D /* Exceptions for "Matrix3D" folder in "Matrix3D" target */,
+			);
 			path = Matrix3D;
 			sourceTree = "<group>";
 		};

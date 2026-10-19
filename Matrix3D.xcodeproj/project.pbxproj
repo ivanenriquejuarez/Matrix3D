@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2C45667030859A8500DF3515 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		2CE5C1CB3079168100918652 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -19,10 +28,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C45667230859A8500DF3515 /* Matrix3DRenderer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Matrix3DRenderer; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE5C1CD3079168100918652 /* Matrix3D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Matrix3D; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2C45667D3086480400DF3515 /* Exceptions for "Matrix3D" folder in "Matrix3DRenderer" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				external/SDL3.xcframework,
+			);
+			target = 2C45667130859A8500DF3515 /* Matrix3DRenderer */;
+		};
 		2CD93E8D307B1F150053886D /* Exceptions for "Matrix3D" folder in "Matrix3D" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -30,16 +47,23 @@
 				"exercises/02 _modify_3d_point.cpp",
 				exercises/03_translate_3d_point.cpp,
 				exercises/04_memory_and_pointers.cpp,
+				exercises/05_3d_cube.cpp,
 			);
 			target = 2CE5C1CC3079168100918652 /* Matrix3D */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		2C45667330859A8500DF3515 /* Matrix3DRenderer */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Matrix3DRenderer;
+			sourceTree = "<group>";
+		};
 		2CE5C1CF3079168100918652 /* Matrix3D */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				2CD93E8D307B1F150053886D /* Exceptions for "Matrix3D" folder in "Matrix3D" target */,
+				2C45667D3086480400DF3515 /* Exceptions for "Matrix3D" folder in "Matrix3DRenderer" target */,
 			);
 			path = Matrix3D;
 			sourceTree = "<group>";
@@ -47,6 +71,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2C45666F30859A8500DF3515 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CE5C1CA3079168100918652 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,10 +88,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C4566793086480300DF3515 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2CE5C1C43079168100918652 = {
 			isa = PBXGroup;
 			children = (
 				2CE5C1CF3079168100918652 /* Matrix3D */,
+				2C45667330859A8500DF3515 /* Matrix3DRenderer */,
+				2C4566793086480300DF3515 /* Frameworks */,
 				2CE5C1CE3079168100918652 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				2CE5C1CD3079168100918652 /* Matrix3D */,
+				2C45667230859A8500DF3515 /* Matrix3DRenderer */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +117,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2C45667130859A8500DF3515 /* Matrix3DRenderer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C45667630859A8500DF3515 /* Build configuration list for PBXNativeTarget "Matrix3DRenderer" */;
+			buildPhases = (
+				2C45666E30859A8500DF3515 /* Sources */,
+				2C45666F30859A8500DF3515 /* Frameworks */,
+				2C45667030859A8500DF3515 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				2C45667330859A8500DF3515 /* Matrix3DRenderer */,
+			);
+			name = Matrix3DRenderer;
+			packageProductDependencies = (
+			);
+			productName = Matrix3DRenderer;
+			productReference = 2C45667230859A8500DF3515 /* Matrix3DRenderer */;
+			productType = "com.apple.product-type.tool";
+		};
 		2CE5C1CC3079168100918652 /* Matrix3D */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CE5C1D43079168100918652 /* Build configuration list for PBXNativeTarget "Matrix3D" */;
@@ -107,6 +170,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 2700;
 				TargetAttributes = {
+					2C45667130859A8500DF3515 = {
+						CreatedOnToolsVersion = 27.0;
+					};
 					2CE5C1CC3079168100918652 = {
 						CreatedOnToolsVersion = 26.6;
 					};
@@ -127,11 +193,19 @@
 			projectRoot = "";
 			targets = (
 				2CE5C1CC3079168100918652 /* Matrix3D */,
+				2C45667130859A8500DF3515 /* Matrix3DRenderer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2C45666E30859A8500DF3515 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CE5C1C93079168100918652 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,6 +216,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		2C45667730859A8500DF3515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2C45667830859A8500DF3515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		2CE5C1D23079168100918652 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -282,6 +374,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2C45667630859A8500DF3515 /* Build configuration list for PBXNativeTarget "Matrix3DRenderer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C45667730859A8500DF3515 /* Debug */,
+				2C45667830859A8500DF3515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2CE5C1C83079168100918652 /* Build configuration list for PBXProject "Matrix3D" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -1,7 +1,12 @@
+# SDL3 external dependencies
+external/
+**/external/
+
+# macOS
 .DS_Store
 
-xcuserdata/
-*.xcuserstate
-
+# Xcode
 DerivedData/
 build/
+*.xcuserstate
+xcuserdata/

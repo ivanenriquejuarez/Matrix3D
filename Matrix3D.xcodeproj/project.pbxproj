@@ -40,6 +40,13 @@
 			);
 			target = 2C45667130859A8500DF3515 /* Matrix3DRenderer */;
 		};
+		2C4566823087DEE800DF3515 /* Exceptions for "Matrix3DRenderer" folder in "Matrix3DRenderer" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				main.cpp,
+			);
+			target = 2C45667130859A8500DF3515 /* Matrix3DRenderer */;
+		};
 		2CD93E8D307B1F150053886D /* Exceptions for "Matrix3D" folder in "Matrix3D" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -56,6 +63,9 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2C45667330859A8500DF3515 /* Matrix3DRenderer */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2C4566823087DEE800DF3515 /* Exceptions for "Matrix3DRenderer" folder in "Matrix3DRenderer" target */,
+			);
 			path = Matrix3DRenderer;
 			sourceTree = "<group>";
 		};

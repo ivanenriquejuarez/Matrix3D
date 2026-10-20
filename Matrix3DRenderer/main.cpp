@@ -47,7 +47,10 @@ int main(int argc, const char * argv[]) {
         while (SDL_PollEvent(&event)) {
             if (event.type == SDL_EVENT_QUIT) {
                 done = true;
+                std::cout << "Closing window...\n";
             }
+            
+            // Display or run functionsso 
         }
     }
     

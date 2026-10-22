@@ -47,6 +47,13 @@
 			);
 			target = 2C45667130859A8500DF3515 /* Matrix3DRenderer */;
 		};
+		2C456687308975EB00DF3515 /* Exceptions for "Matrix3DRenderer" folder in "Matrix3D" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				main.cpp,
+			);
+			target = 2CE5C1CC3079168100918652 /* Matrix3D */;
+		};
 		2CD93E8D307B1F150053886D /* Exceptions for "Matrix3D" folder in "Matrix3D" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -55,6 +62,8 @@
 				exercises/03_translate_3d_point.cpp,
 				exercises/04_memory_and_pointers.cpp,
 				exercises/05_3d_cube.cpp,
+				exercises/graphics/01_pixel_buffer.cpp,
+				exercises/graphics/02_dynamic_pixel_buffer.cpp,
 			);
 			target = 2CE5C1CC3079168100918652 /* Matrix3D */;
 		};
@@ -64,6 +73,7 @@
 		2C45667330859A8500DF3515 /* Matrix3DRenderer */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				2C456687308975EB00DF3515 /* Exceptions for "Matrix3DRenderer" folder in "Matrix3D" target */,
 				2C4566823087DEE800DF3515 /* Exceptions for "Matrix3DRenderer" folder in "Matrix3DRenderer" target */,
 			);
 			path = Matrix3DRenderer;
